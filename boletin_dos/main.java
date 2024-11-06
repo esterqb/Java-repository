@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 import static boletin_dos.ejercicio4.ej4;
 import static boletin_dos.ejercicio5.ej5;
+import static boletin_dos.ejercicio6.ej6;
 import static boletin_dos.ejercicioUno.ej1;
 import static boletin_dos.ejercicioDos.ej2;
 import static boletin_dos.ejercicio3.ej3;
@@ -23,6 +24,8 @@ public class main {
             System.out.println("4. Pedir números hasta que se teclee uno negativo, y mostrar cuántos números se han introducido.");
             System.out.println("5. Realizar un juego para adivinar un número. Para ello pedir un número N, y luego ir pidiendo números indicando “mayor”" +
                     "o “menor” según sea mayor o menor con respecto a N. El proceso termina cuando el usuario acierta.");
+
+
             System.out.print("Selecciona una opción: ");
 
             int opcion=Integer.parseInt(br.readLine());
@@ -46,6 +49,9 @@ public class main {
                     break;
                 case 5:
                     ej5(br);
+                    break;
+                case 6:
+                    ej6(br);
                     break;
                 default:
                     System.out.println("Opción no válida. Por favor, selecciona una opción del 1 al 22. Pulsa 0 para salir.");
